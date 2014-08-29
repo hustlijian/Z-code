@@ -49,7 +49,7 @@ int main(int argc, char const* argv[])
     //printf("main block_size : %d\n",zcode.blocksize);
 
     // init data 
-    pdata = (unsigned char *)malloc((size_t)(2*m+k)*r*zcode.blocksize);
+    pdata = (unsigned char *)malloc((size_t)(2UL*m+k)*r*zcode.blocksize);
     if (NULL == pdata) {
         perror("malloc error");
     }
@@ -59,7 +59,7 @@ int main(int argc, char const* argv[])
     psrc = pdata;
     pdes = pdata + (k*r*(zcode.blocksize));
     pdes2 = pdes + (m*r*(zcode.blocksize));
-    memset(pdes, 0, 2*m*r*(zcode.blocksize));
+    memset(pdes, 0, 2UL*m*r*(zcode.blocksize));
 
 #if MSG==1
     printf("n:%d, k:%d, row:%d col:%d\n", m+k, k, LIL_ROW(m,k), LIL_COL(m,k));

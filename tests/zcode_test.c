@@ -45,7 +45,7 @@ int main(int argc, char const* argv[])
     printf("main block_size : %d\n",zcode.blocksize);
 
     // init data 
-    pdata = (unsigned char *)malloc((2*m+k)*r*zcode.blocksize);
+    pdata = (unsigned char *)malloc((size_t)(2*m+k)*r*zcode.blocksize);
 
     // test zcode encode
     printf("Encode zcode:\n");
