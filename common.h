@@ -8,7 +8,7 @@ typedef struct{
 
 void log_message(const char *filename, int line, const char *function, const char *fmt, ...);
 
-void * rlc_alloc(const char *filename, int line, const char *function, int size);
+void * rlc_alloc(const char *filename, int line, const char *function, size_t size);
 
 int math_pow(int exp, int index);
 

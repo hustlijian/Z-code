@@ -67,7 +67,7 @@ void log_message(const char *filename, int line, const char *function, const cha
     va_end(va);
 }
 
-void *rlc_alloc(const char *filename, int line, const char *function, int size)
+void *rlc_alloc(const char *filename, int line, const char *function, size_t size)
 {
     void * ptr;
     ptr = calloc(size, 1);
