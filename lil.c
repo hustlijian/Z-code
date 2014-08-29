@@ -139,9 +139,9 @@ int make_pgm_lil(lil_t *pzlil, int m, int k){
         lil_free(lt2);
     }
 
-    printf("====\n");
-    print_matrix(pzlil, LIL_ROW(m,k), LIL_COL(m,k));
-    printf("====\n");
+    //printf("====\n");
+    //print_matrix(pzlil, LIL_ROW(m,k), LIL_COL(m,k));
+    //printf("====\n");
     return 1;
     
 }

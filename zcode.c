@@ -128,7 +128,7 @@ int z_init(z_info_t *pzinfo, int m, int k, int datasize, int packetsize){
 
     pzinfo->pzlil = (lil_t *)LIL_ALLOC(m, k);
     make_pgm_lil(pzinfo->pzlil, m, k);
-    print_matrix(pzinfo->pzlil, LIL_ROW(m,k), LIL_COL(m,k));
+    //print_matrix(pzinfo->pzlil, LIL_ROW(m,k), LIL_COL(m,k));
 
     pzinfo->m = m;
     pzinfo->k = k;
