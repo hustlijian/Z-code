@@ -1,2 +1,5 @@
 cscope.*
 tags
+*.test
+*.o
+*.swp
